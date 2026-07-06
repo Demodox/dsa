@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Tree, Depth-First Search, Breadth-First Search, Binary Tree
 - **Link:** https://leetcode.com/problems/binary-tree-right-side-view/
-- **Runtime:** 0 ms
-- **Memory:** 14.9 MB
+- **Runtime:** 2 ms
+- **Memory:** 15 MB
 - **Language:** cpp
