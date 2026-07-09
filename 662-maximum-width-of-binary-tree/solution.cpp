@@ -13,8 +13,10 @@
  // Hint : index of left child of a node = 2*idx+1  &  index of right child = 2*udx+2
 class Solution {
 public:
-    typedef long long ll;
+    typedef unsigned long long ll;
     int widthOfBinaryTree(TreeNode* root){
+        if(root == NULL)
+            return 0;
 
         queue<pair<TreeNode* , ll>>q;
         int ans =0;
@@ -22,6 +24,7 @@ public:
         q.push({root,0});
         while(!q.empty())
         {
+
             int n= q.size();
             ll s = q.front().second;
             ll e = q.back().second;
