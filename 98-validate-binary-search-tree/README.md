@@ -4,5 +4,5 @@
 - **Tags:** Tree, Depth-First Search, Binary Search Tree, Binary Tree
 - **Link:** https://leetcode.com/problems/validate-binary-search-tree/
 - **Runtime:** 0 ms
-- **Memory:** 8.1 MB
+- **Memory:** 22 MB
 - **Language:** cpp
