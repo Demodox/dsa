@@ -14,6 +14,11 @@ public:
     void solve(TreeNode* root, int k, set<int>& st, bool& ans )
     {
         if(root == NULL) return;
+        if(k- root->val == 0)
+        {
+            ans =true;
+            return;
+        }
 
         if(st.find(k- root->val) != st.end())
         {
