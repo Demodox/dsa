@@ -3,6 +3,6 @@
 - **Difficulty:** Easy
 - **Tags:** Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree
 - **Link:** https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
-- **Runtime:** 0 ms
-- **Memory:** 8.2 MB
+- **Runtime:** 13 ms
+- **Memory:** 41.9 MB
 - **Language:** cpp
