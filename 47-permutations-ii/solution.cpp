@@ -1,15 +1,16 @@
 class Solution {
 public:
     vector<vector<int>>result;
+    int n;
     void solve(vector<int>& nums, int idx)
     {
-        if(idx == nums.size())
+        if(idx == n)
         {
             result.push_back(nums);
             return;
         }
         unordered_set<int>st;
-        for ( int i = idx;i<nums.size();i++)
+        for ( int i = idx; i<n ;i++)
         {
             if(st.find(nums[i]) != st.end())
             {
@@ -23,9 +24,8 @@ public:
         }
     }
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        int n= nums.size();
-        int idx = 0;
-        solve( nums, idx);
+        n= nums.size();
+        solve( nums, 0);
         return result;
         
 
