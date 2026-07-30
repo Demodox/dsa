@@ -32,7 +32,7 @@ public:
    }
     int findKthLargest(vector<int>& nums, int k) {
         int l = 0;
-        int r =nums.size();
+        int r =nums.size()-1;
 
         int piv = 0; // Pivert index
 
