@@ -1,50 +1,52 @@
 class Solution {
 public:
-    bool isCycle(int node ,vector<vector<int>>& adj, vector<bool> &visited,vector<bool> &inRecurtion )
-    {
-        visited[node] = true;
-        inRecurtion[node] = true;
-
-        for( auto &it:adj[node] )
-        {
-            if(!visited[it] && isCycle(it, adj, visited, inRecurtion))
-            {
-                return true;
-            }
-            else if(inRecurtion[it])
-            {
-                return true;
-            }
-        }
-
-        inRecurtion[node]= false;
-        return false;
-
-    }
-
+    // Using BFS 
+   
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
 
         vector<vector<int>>adj(numCourses);
-
-
-        vector<bool>visited(numCourses, false);
-        vector<bool>inRecurtion(numCourses, false);
+        vector<int>count(numCourses, 0);
 
         for(auto it : prerequisites)
         {
             int u = it[0];
             int v = it[1];
             adj[v].push_back(u);
+            count[u]++;
         }
+
+        queue<int>q;
 
         for(int i =0; i<numCourses; i++)
         {
-            if(!visited[i] && isCycle(i, adj, visited, inRecurtion))
+            if(count[i] == 0)
             {
-                return false;
+                q.push(i);
             }
+            
         }
-        return true;
+
+        vector<int>result;
+
+        while(!q.empty())
+        {
+            int node = q.front();
+            q.pop();
+            result.push_back(node);
+            for(auto it : adj[node])
+            {
+                count[it]--;
+                if(count[it] == 0)
+                {
+                    q.push(it);
+                }
+            }
+
+        }
+
+        if(result.size()  == numCourses) return true;
+        return false;
+       
         
     }
 };
