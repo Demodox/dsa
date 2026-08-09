@@ -2,24 +2,33 @@ class Solution {
 public:
     // Topolocical sorting  using dfs
 
-    void dfs(int node, vector<vector<int>>& adj, vector<bool> &visited, stack<int> &st )
+    bool isCycle(int node, vector<vector<int>>& adj, vector<bool> &visited, vector<bool> &inRecurtion, stack<int> &st )
     {
         visited[node] = true;
+        inRecurtion[node] = true;
 
         for(auto &it : adj[node])
         {
-            if(!visited[it])
+            if(!visited[it] && isCycle(it, adj, visited, inRecurtion, st))
             {
-                dfs(it, adj, visited, st);
+                return true;
+            }
+            else if(inRecurtion[it] == true)
+            {
+                return true;
             }
         }
         st.push(node);
+        inRecurtion[node] = false;
+
+        return false;
     }
 
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
 
         vector<vector<int>>adj(numCourses);
         vector<bool>visited(numCourses, false);
+        vector<bool>inRecurtion(numCourses, false);
 
         stack<int>st;
 
@@ -33,9 +42,9 @@ public:
 
         for(int i =0; i<numCourses; i++)
         {
-            if(!visited[i])
+            if(!visited[i] && isCycle(i, adj, visited,inRecurtion, st) )
             {
-                dfs(i, adj, visited, st);
+                return {};
             }
         }
 
