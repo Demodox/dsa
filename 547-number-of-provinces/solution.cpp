@@ -25,8 +25,9 @@ public:
         {
             if(!visited[i] )
             {
-                count++;
-                dfs(i, isConnected, visited);       
+                
+                dfs(i, isConnected, visited);   
+                count++;    
             }      
         }
         
