@@ -56,6 +56,7 @@ public:
         for(int i =0;i<n;i++)
         {
             int p  = findParent(i);
+        
             mp[p]++;
         }
 
