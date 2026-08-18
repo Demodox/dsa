@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Array, Binary Search, Sliding Window, Prefix Sum
 - **Link:** https://leetcode.com/problems/max-consecutive-ones-iii/
-- **Runtime:** 5 ms
-- **Memory:** 71.9 MB
+- **Runtime:** 3 ms
+- **Memory:** 69.5 MB
 - **Language:** cpp
