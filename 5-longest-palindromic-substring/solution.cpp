@@ -17,14 +17,14 @@ public:
     string longestPalindrome(string s) {
 
         int n = s.length();
-        if( n ==1) return s;
+        
         dp.resize(n, vector<int>(n, -1));
         int length = 0;
-        string ans="";
+        string ans=s.substr(0,1);
 
         for(int i =0;i<n;i++)
         {
-            for(int j =i; j<n;j++)
+            for(int j =i+1; j<n;j++)
             {
                 if(isPalindrome(s, i , j))
                 {
