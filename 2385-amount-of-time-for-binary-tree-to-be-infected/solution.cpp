@@ -27,7 +27,7 @@ public:
             result = max(lr, rr);
             return -1;
         }
-        else if( lr>0 && rr>0)
+        else if( lr>=0 && rr>=0)
         {
             return max(lr, rr)+1;
         }
@@ -37,6 +37,8 @@ public:
             result = max(result , d);
             return min(lr, rr)-1;
         }
+
+    
     }
     
     int amountOfTime(TreeNode* root, int start) {
