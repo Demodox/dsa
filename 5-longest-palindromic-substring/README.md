@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Two Pointers, String, Dynamic Programming, Manacher
 - **Link:** https://leetcode.com/problems/longest-palindromic-substring/
-- **Runtime:** 155 ms
-- **Memory:** 278.8 MB
+- **Runtime:** 135 ms
+- **Memory:** 279 MB
 - **Language:** cpp
