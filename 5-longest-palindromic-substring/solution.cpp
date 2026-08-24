@@ -18,7 +18,7 @@ public:
 
         int n = s.length();
         
-        dp.resize(n, vector<int>(n, -1));
+        dp.resize(n+1, vector<int>(n+1, -1));
         int length = 0;
         string ans=s.substr(0,1);
 
