@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Array, Dynamic Programming, Knapsack Problem, 0-1 Knapsack
 - **Link:** https://leetcode.com/problems/partition-equal-subset-sum/
-- **Runtime:** 276 ms
-- **Memory:** 205.7 MB
+- **Runtime:** 186 ms
+- **Memory:** 111.3 MB
 - **Language:** cpp
