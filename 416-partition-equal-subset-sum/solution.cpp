@@ -4,8 +4,8 @@ public:
     vector<vector<int>>dp;
     bool solve(vector<int>& nums, int idx, int sum)
     {
-        if(idx>= nums.size() ) return false;
         if(sum == totalsum/2) return true;
+        if(idx>= nums.size() || sum > totalsum/2 ) return false;
 
         if(dp[idx][sum] !=-1) return dp[idx][sum];
         bool take = solve(nums, idx+1, sum+nums[idx]);
@@ -24,7 +24,7 @@ public:
 
         if(totalsum  % 2 != 0) return false;
 
-        dp.resize(n+1, vector<int>(totalsum, -1));
+        dp.resize(n+1, vector<int>((totalsum/2)+1, -1));
 
         return solve(nums, 0,0);
         
