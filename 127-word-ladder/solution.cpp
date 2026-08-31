@@ -23,13 +23,14 @@ public:
                     char org = st[i]; // store thr original char
                     for(char j ='a'; j<='z'; j++)
                     {
-                        st[i] = j;
                         
                         if( j == org) continue;
+                        st[i] = j;
                         if(st ==endWord ) return length;
                         if(s.find(st) != s.end())
                         {
                             q.push(st);
+                            s.erase(st); // Remove from set to avoid repetation
                         }
 
                     }
