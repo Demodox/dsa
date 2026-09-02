@@ -4,5 +4,5 @@
 - **Tags:** Array, Divide and Conquer, Dynamic Programming
 - **Link:** https://leetcode.com/problems/maximum-subarray/
 - **Runtime:** 0 ms
-- **Memory:** 8.1 MB
+- **Memory:** 71.6 MB
 - **Language:** cpp
