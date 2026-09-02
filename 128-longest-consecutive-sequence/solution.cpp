@@ -6,7 +6,7 @@ public:
          int length =0;
          int result = 0;
 
-        for( int n:nums)
+        for( int n:s)
         {
             if(s.find(n-1) == s.end())
             {
