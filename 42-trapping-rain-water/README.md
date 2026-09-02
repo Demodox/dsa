@@ -3,6 +3,6 @@
 - **Difficulty:** Hard
 - **Tags:** Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack
 - **Link:** https://leetcode.com/problems/trapping-rain-water/
-- **Runtime:** 0 ms
-- **Memory:** 26 MB
-- **Language:** cpp
+- **Runtime:** 5 ms
+- **Memory:** 21 MB
+- **Language:** python3
