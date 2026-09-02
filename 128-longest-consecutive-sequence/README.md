@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Array, Hash Table, Union-Find
 - **Link:** https://leetcode.com/problems/longest-consecutive-sequence/
-- **Runtime:** 0 ms
-- **Memory:** 8.2 MB
+- **Runtime:** 80 ms
+- **Memory:** 89 MB
 - **Language:** cpp
