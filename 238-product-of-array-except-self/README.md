@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Array, Prefix Sum
 - **Link:** https://leetcode.com/problems/product-of-array-except-self/
-- **Runtime:** 0 ms
-- **Memory:** 42.2 MB
-- **Language:** cpp
+- **Runtime:** 39 ms
+- **Memory:** 27.6 MB
+- **Language:** python3
