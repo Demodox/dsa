@@ -13,11 +13,9 @@ class Solution:
                 if p[1] <q[1]:
                     result = max(result , q[0] - p[0])
             
-            elif prices[i] >  q[0] :
+            elif  prices[i] - p[0] >result :
                 q =(prices[i], i)
-
-                if p[1] <q[1]:
-                    result = max(result , q[0] - p[0])
+                result = max(result , prices[i] - p[0])
         
         return result
 
