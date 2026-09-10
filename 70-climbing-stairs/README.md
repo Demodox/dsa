@@ -4,5 +4,5 @@
 - **Tags:** Math, Dynamic Programming, Memoization
 - **Link:** https://leetcode.com/problems/climbing-stairs/
 - **Runtime:** 0 ms
-- **Memory:** 8.7 MB
-- **Language:** cpp
+- **Memory:** 19.5 MB
+- **Language:** python3
