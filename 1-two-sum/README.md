@@ -4,5 +4,5 @@
 - **Tags:** Array, Hash Table
 - **Link:** https://leetcode.com/problems/two-sum/
 - **Runtime:** 0 ms
-- **Memory:** 20.5 MB
+- **Memory:** 20.6 MB
 - **Language:** python3
