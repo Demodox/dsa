@@ -8,6 +8,7 @@ class Solution:
             if c not in st :
                 st.add(c)
                 count +=1
+                result = max(result, count)
             else:
                 result = max(result, count)
                 count = 1
@@ -15,6 +16,6 @@ class Solution:
                 st.add(c)
 
         return result
-        
+
 
         
