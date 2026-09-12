@@ -12,5 +12,7 @@ class Solution:
                  
             else:
                 count = num
+                result = max(result , count) 
+                 
         return result         
         
