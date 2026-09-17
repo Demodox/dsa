@@ -1,17 +1,22 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t) :
+        if(len(s ) != len(t)):
             return False
-            
-        freq = [0] * 26
-
+        
+        mp={}
         for ch in s:
-            freq[ord(ch) - ord('a')] +=1
-        for ch in t:
-            freq[ord(ch) - ord('a')] -=1
+            mp[ch] = mp.get(ch, 0) + 1
 
-        for i in freq:
-            if i != 0: 
+        for ch in t:
+            mp[ch] = mp.get(ch, 0) -1
+
+        for key , val in mp.items():
+            x = key
+            y= val
+            if( y !=0):
                 return False
 
         return True
+        
+            
+        
