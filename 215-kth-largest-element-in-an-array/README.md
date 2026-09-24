@@ -3,6 +3,6 @@
 - **Difficulty:** Medium
 - **Tags:** Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect
 - **Link:** https://leetcode.com/problems/kth-largest-element-in-an-array/
-- **Runtime:** 43 ms
-- **Memory:** 69.1 MB
-- **Language:** cpp
+- **Runtime:** 104 ms
+- **Memory:** 31 MB
+- **Language:** python3
