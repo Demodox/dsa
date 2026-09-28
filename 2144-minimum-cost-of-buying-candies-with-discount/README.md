@@ -4,5 +4,5 @@
 - **Tags:** Array, Greedy, Sorting
 - **Link:** https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
 - **Runtime:** 0 ms
-- **Memory:** 19.3 MB
-- **Language:** python3
+- **Memory:** 14.1 MB
+- **Language:** cpp
