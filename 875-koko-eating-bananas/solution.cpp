@@ -5,22 +5,11 @@ public:
         int count =0;
         for( int i =0;i< piles.size(); i++)
         {
-            if(piles[i] <= b)
-            {
-                count++;
-            }
-            else if(piles[i] % b ==0 )
-            {
-                count += (piles[i] / b);
-            }
-            else
-            {
-                count += ((piles[i] / b) +1);
-            }
-            
+            count += ( piles[i] +b-1)/b;
+            if (count >h) return false;
         }
 
-        return count <= h;
+        return true;
 
     }
     int minEatingSpeed(vector<int>& piles, int h) {
