@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<vector<int>>dir = {{0,1}, {1, 0}, {-1, 0}, {0, -1}};
-    int bfs(vector<vector<int>>& grid, int r, int c,vector<vector<bool>>& visited ) 
+    long long bfs(vector<vector<int>>& grid, int r, int c,vector<vector<bool>>& visited ) 
     {
 
         
         visited[r][c] = true;
-        int sum = grid[r][c];
+        long long sum = grid[r][c];
 
         for( int i =0; i<4; i++)
         {
@@ -36,7 +36,7 @@ public:
             {   
                 if( grid[i][j] !=0 && !visited[i][j])
                 {
-                    int sum = bfs(grid, i, j , visited);
+                    long long sum = bfs(grid, i, j , visited);
                     if(sum %k == 0) result++;
 
                 }
